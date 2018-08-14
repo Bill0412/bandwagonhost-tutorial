@@ -6,7 +6,7 @@
    ![options](pictures/bwh-options-1.png)
   **3. Click on [Order KVM or OpenVZ](https://bandwagonhost.com/vps-hosting.php)**  
    ![options](pictures/bwh-options-2.png)
-  **4. Click on the *Order [KVM](https://www.linux-kvm.org/page/Main_Page)* option in the first column of the table.**  *(Our Outline server will be on a Debian distribution of Linux)*
+  **4. Click on the *Order [KVM](https://www.linux-kvm.org/page/Main_Page)* option in the first column of the table.**  *(Our Outline server will be on a CentOS distribution of Linux)*
    ![select order kvm](pictures/order-kvm-1.png)
   **5. Click on *Add To Cart***
    ![add to cart](pictures/add-to-cart.png)  
@@ -18,6 +18,6 @@
   ![Pay Now](pictures/pay-now-1.png)
   **9. Scan the Alipay QR payment code and finish your payment on your mobile phone or directly on your PC**
   ![Alipay](pictures/alipay.png)
-### After your payment, you can now ready to set up the server
+### After your payment, you are now ready to set up the server
 (To be updated...)
   
