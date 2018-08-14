@@ -1,4 +1,5 @@
 # Step by Step Tutorial
+## Part A: Purchase a server for your VPN
   **1. Open the [official website of BandwagonHost](https://bandwagonhost.com/) in your web brouser**     
   ![The official website](pictures/bwh-index.png)
   **2. Select your preferred VPS([Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server)) option. Here we choose the first option(10G VPS), which I highly recommend**   
@@ -18,6 +19,13 @@
   ![Pay Now](pictures/pay-now-1.png)
   **9. Scan the Alipay QR payment code and finish your payment on your mobile phone or directly on your PC**
   ![Alipay](pictures/alipay.png)
-### After your payment, you are now ready to set up the server
-(To be updated...)
+#### *After your payment, you are now ready to set up the server*
+  
+
+## Part B: Set Up the Outline Server   
+  
+  
+ 
+  
+## Part C: Connect to the server from multiple platforms
   
