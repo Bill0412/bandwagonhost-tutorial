@@ -64,10 +64,10 @@
   *After a quick installation, you are now ready to use the PuTTy to connect to the server.*
   ![putty download](pictures/putty-download.png)
 
-  **4. Login to the server with PuTTy**  
+  **5. Login to the server with PuTTy**  
   *Go Back to **Main controls** and look up the IP address and SSH Port. *
   ![main controls](pictures/main-controls.png)
-  *Run PuTTy.exe on your PC, fill the IP address and Port according to the **Main controls** Panel*
+  *Run PuTTy.exe on your PC, then enter the IP address and Port according to the **Main controls** Panel*
   *<br> (Note: 1. When you input your password, it is not shown explicitly, but recorded internally. So just **hit the Enter key** when you're ready to login.<br>2. **Ctrl+V** (**Shift+Insert** instead) for paste, **Ctrl+C** (**Ctrl+Insert** instead) for copy are **NOT supported** in shell.)*  
 
   *Login with the following customized information:*  
@@ -81,32 +81,36 @@
   ![successful login smample](pictures/successful-login.jpg)
   *(A successful login looks like this)*
 
-  **5. Configure the environment**  
+  **6. Configure the environment**  
   *It is time for us to copy and paste code! Interactive shell reacts responsively whenever we input a single line of code and hit the Enter key on our keyboard.
-   So what you need to do is to enter the following code line by line and check if each one of these lines works similar to my description.*
+   So what you need to do is to enter the following code line by line and check if each one of these lines work similar to my description.*
   1. `sudo -i`   
   *You should get a new line as a response. Just continue to enter line 2.*
   2. `sudo apt-get install curl`   
-  *wait a few seconds until a new line shows up.* 
-  ![get docker](pictures/get-docker.png)
-  ![after docker installation](pictures/after-docker-installation.png)
-  3. `curl -sS https://get.docker.com/ | sh`  
-  *It may take quite a few minutes until you see something like the picture below.*
+  *After hitting the Enter key and wait for a few seconds, you should see a prompt. Enter y and the installation should continue.*  
+  ![install curl](pictures/curl-install.png)
+  *Go to **[Line 3](#code-line-3)** when you see this:*
+  ![curl installation finished](pictures/install-curl-done.png)
+  3. <a id="code-line-3"/>`curl -sS https://get.docker.com/ | sh`  
+  *It may take quite a few minutes until you see something like this:*
   ![docker installed](pictures/docker-installed.png) 
   4. `systemctl start docker`  
   *The same response as the 1st line.*
   5. `systemctl enable docker`  
-  *The same response as the 1st line.*
+  ![docker installed](pictures/enable-docker.png)
   6. `systemctl status docker`  
-  *If you see the green"active running", you are safe to continue.<br>Hit Q key to quit the log info*
-  ![docker running actively](pictures/docker-active.png) 
+  *If you see the green"active running", you are safe to continue.*
+  ![docker status active](pictures/docker-status.png)
+  *Hit Q key directly*
+  ![docker running actively](pictures/docker-status-1.png) 
   
-  **6. Set up the *Outline server***  
+  **7. Set up the *Outline server***  
   Enter the following line of code in the shell.  
   `bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"`
-  ![install outline server bash code](pictures/outline-server.png)
-  *Select the info line with your mouse cursor and the line is automatically copied to your paste board, paste, save and keep it in a .txt file for later use.*  
-  ![outline server information](pictures/outline-server-info.png)  
+  ![outline code](pictures/install-outline-done.png)
+  *Select the green line(in the above picture) with your mouse cursor and the line is automatically copied to your paste board. Just paste, save and keep it in a .txt file for later use.*  
+  ![copy outline server information](pictures/copy-outline-code.png)  
+#### *Congratulations! Up until now, you have set up the server side of your VPN.*
 
 ## Part C: Connect to the server from multiple platforms
   
