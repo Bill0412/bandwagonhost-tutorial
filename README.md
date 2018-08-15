@@ -4,7 +4,7 @@
   *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh1.net/ out.)*    
   ![The official website](pictures/bwh-index.png)   
 
-  **2. Select your preferred VPS([Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server)) option. Here we choose the first option(10G VPS), which I highly recommend**   
+  **2. Select your preferred VPS([Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server)) option. Here we choose the first option(10G VPS), which might be sometimes unstable.([Click here](https://bwh1.net/aff.php?aff=544&pid=56) pay extra 10 dollars for premium (much more stable and less latency) and then [Skip Several Steps](#add-to-cart))**   
   *(Cautious: Some of these options are charged by quater or month instead of year, so pay attention if you'd like to select one of the rest.)*   
    ![options](pictures/bwh-options-1.png)  
 
@@ -14,7 +14,7 @@
   **4. Click on the *Order [KVM](https://www.linux-kvm.org/page/Main_Page)* option in the first column of the table.**  *(Our Outline server will be on an Ubuntu distribution of Linux)*
    ![select order kvm](pictures/order-kvm-1.png)  
  
-  **5. Click on *Add To Cart***
+  **5. <a id="add-to-cart"/>Click on *Add To Cart***
    ![add to cart](pictures/add-to-cart.png)   
 
   **6. Click on *Checkout***
