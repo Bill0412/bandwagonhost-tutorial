@@ -181,5 +181,5 @@
 
 
 ## Cotributions
-#### *This is a free and open source tutorial maintained by Bill. If you like this tutorial or want more tutorials, and is willing to financially support me, I'd greatly appreciate it.*
+#### *This is a free and open source tutorial maintained by Bill. If you like this tutorial or want more tutorials like this, and are willing to financially support me, I'd greatly appreciate it and be motivated.*
    <img src="pictures/alipay-code.jpg" width="250px"/> <img src="pictures/wechat-code.png" width="250px"/>
