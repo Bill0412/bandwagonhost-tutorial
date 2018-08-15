@@ -48,30 +48,42 @@
   ![services](pictures/services.png)
   *Click on **KiwiVM Control Panel***
   ![control panel](pictures/control-panel-1.png)
+  *Stop the server before **Reload**: Click on **Stop***  
+  ![stop the server](pictures/stop-server.png)
   *Click on **Install New OS***
-  ![new OS intallation](pictures/install-new-os.png) 
+  ![new OS intallation](pictures/install-new-os.png)
    
   **3. Install new OS**  
   *Select **Ubuntu-18.04-x86_64**, which is at the bottom of the selection box. Then **check the agreement box** and finally left click **Reload**.*  
   ![new OS selection](pictures/install-new-os-1.png)
-  *You should see something like below a few seconds later. The password and SSH port are important, so you may copy it on a paper or take a screenshot for later utility. (This information is also sent to your email, but may take some time, so keep it yourself just in case)*<a id="root-password"></a>  
+  *You should see something like below a few seconds later. The password and SSH port are important, so you may copy it or take a screenshot for later utility. (This information is also sent to you by email, but may take a while, so keep it yourself just in case)*<a id="root-password"></a>  
   ![root password](pictures/root-password.png)
 
-  **4. Log into the server**  
-  *You may have to wait a few minutes and try several times before you can open the **interactvie root shell**.*
-  ![launch shell](pictures/launch-shell.png)
-  *Just click the **Launch** button and wait a minute and click and wait and so forth until you see the window in the picture below.*
-  ![shell-window](pictures/shell-window.png)
-  *Login with the following information:*  
-  `username: root`  
-  `password: use the password you set down in step 3` [*<u>click here to review</u>*](#root-password)  
-  *(When you enter the password, no character is shown explicitly but recorded internally for the sake of security.)*  
-  ![successful login smample](pictures/successful-login.png)
+  **4. Install PuTTy**  
+  *[Click here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to go to the PuTTy download page. Download the 32-bit or 64-bit version(mostly 64-bit) version of PuTTy and install it.*  
+  *After a quick installation, you are now ready to use the PuTTy to connect to the server.*
+  ![putty download](pictures/putty-download.png)
+
+  **4. Login to the server with PuTTy**  
+  *Go Back to **Main controls** and look up the IP address and SSH Port. *
+  ![main controls](pictures/main-controls.png)
+  *Run PuTTy.exe on your PC, fill the IP address and Port according to the **Main controls** Panel*
+  *<br> (Note: 1. When you input your password, it is not shown explicitly, but recorded internally. So just **hit the Enter key** when you're ready to login.<br>2. **Ctrl+V** (**Shift+Insert** instead) for paste, **Ctrl+C** (**Ctrl+Insert** instead) for copy are **NOT supported** in shell.)*  
+
+  *Login with the following customized information:*  
+  `log in as: root`  
+  `root@xxx.xxx.xxx.xxx's password: (The one you copied or in the screenshot or you can find it in your mail box.)`  
+
+  ![email password](pictures/email-password.png)  
+
+  ![putty connect](pictures/putty-info.png)
+  *Click on yes in the Alert Window and you are now ready to configure the server remotely and you should see:*  
+  ![successful login smample](pictures/successful-login.jpg)
   *(A successful login looks like this)*
 
   **5. Configure the environment**  
-  *It is time for us to code. Interactive shell reacts responsively whenever we input one line of code and stroke the enter key on our keyboard.
-   So what you need to do is to enter the following code line by line and check if each one of these lines works correctly.*
+  *It is time for us to copy and paste code! Interactive shell reacts responsively whenever we input a single line of code and hit the Enter key on our keyboard.
+   So what you need to do is to enter the following code line by line and check if each one of these lines works similar to my description.*
   1. `sudo -i`   
   *You should get a new line as a response. Just continue to enter line 2.*
   2. `sudo apt-get install curl`   
@@ -86,20 +98,34 @@
   5. `systemctl enable docker`  
   *The same response as the 1st line.*
   6. `systemctl status docker`  
-  *If you see the green"active running", you are safe to continue.*
+  *If you see the green"active running", you are safe to continue.<br>Hit Q key to quit the log info*
   ![docker running actively](pictures/docker-active.png) 
   
   **6. Set up the *Outline server***  
-  Enter the following line of code in the shell. 
-  `sudo wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh | bash`
+  Enter the following line of code in the shell.  
+  `bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"`
   ![install outline server bash code](pictures/outline-server.png)
-  *When you see something like this, copy the information in the green rectangle or take a screeshot of it for later use.*  
+  *Select the info line with your mouse cursor and the line is automatically copied to your paste board, paste, save and keep it in a .txt file for later use.*  
   ![outline server information](pictures/outline-server-info.png)  
-   
-
-
 
 ## Part C: Connect to the server from multiple platforms
   
   **1. Install the *Outline Manager* on your PC**  
   *Download the **Outline Manager**(It is Open Source) in the repository at the top of this web page.*
+
+
+
+
+
+
+
+
+
+Temporary develop note:
+
+change the selection to 30 dollar one or change server with the 20 dollar one
+
+outline client download:
+https://github.com/Jigsaw-Code/outline-client/releases
+
+The link should work for all phones
