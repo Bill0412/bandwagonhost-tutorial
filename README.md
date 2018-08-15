@@ -179,3 +179,7 @@
 
 ## Free VPN list(Updating)<a id="free-vpn"></a>
 
+
+## Cotributions
+#### *This is a free and open source tutorial maintained by Bill. If you like this tutorial or want more tutorials, and is willing to financially support me, I'd greatly appreciate it.*
+   <img src="pictures/alipay-code.jpg" width="250px"/> <img src="pictures/wechat-code.png" width="250px"/>
