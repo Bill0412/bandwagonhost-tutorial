@@ -1,6 +1,6 @@
 # Step by Step Tutorial
 ## Part A: Purchase a server from BandwagonHost
-  **1. Open the [official website of BandwagonHost](https://bwh1.net/) in your web brouser**  
+  **1. Open the [official website of BandwagonHost](https://bwh1.net/) in your web browser**  
   *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh1.net/ out.)*    
   ![The official website](pictures/bwh-index.png)   
 
@@ -107,29 +107,75 @@
   **7. Set up the *Outline server***  
   Enter the following line of code in the shell.  
   `bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"`
-  ![outline code](pictures/install-outline-done.png)
-  *Select the green line(in the above picture) with your mouse cursor and the line is automatically copied to your paste board. Just paste, save and keep it in a .txt file for later use.*  
+  <a id="outline-code"></a>![outline code](pictures/install-outline-done.png)
+  *Select the green line(in the above picture) with your mouse cursor and the line is automatically copied to your paste board. Just paste, save and keep it in a .txt file for later use. (I highly recommend you keep this file on your PC and not delete it.)*  
   ![copy outline server information](pictures/copy-outline-code.png)  
-#### *Congratulations! Up until now, you have set up the server side of your VPN.*
+#### *Congratulations! Up til now, you have set up the server side of your VPN.*
 
 ## Part C: Connect to the server from multiple platforms
   
   **1. Install the *Outline Manager* on your PC**  
-  *Download the **Outline Manager**(It is Open Source) in the repository at the top of this web page.*
+  *Download the **Outline Manager**(It is Open Source) in the repository (at the top of [this web page](https://github.com/Bill0412/bandwagonhost-tutorial)).*  
+  ![download outline manager link](pictures/github-outline.png)
+  ![download outline manager](pictures/github-outline-1.png)
+  *Double click on the Outline-Manager.exe on your PC to start the quick installation of Outline Manager.<br>Wait less than a minute and you will see a the Outline Manager window, then click on **GET STARTED**.*
+  ![get started outline manager](pictures/outline-manager-start.png)
+  *When you see the Outline Manager Window below, copy and paste the code you copied in [Part B, Step 7](#outline-code) and then click on done.
+  ![paste outline key](pictures/paste-outline-code.png)
+  
+  <a id="connect-pc"></a>**2. Connect current PC you are using to the server**  
+  *Click on **CONNECT THIS DEVICE***
+  ![connect this device](pictures/connect-this-device.png)
+  *Click on **COPY***
+  ![copy the invitation link](pictures/copy-invitation.png)  
+  *Click on **INSTALL OUTLINE**. Download and quickly install the Outline Client and then open it.*
+  ![install outline for windows](pictures/install-outline-client.png)
+  *In the Outline Client for Windows, click on **ADD SERVER**(If it does not work, please make sure you have the link starting with "ss" in your paste board.)*
+  ![add server](pictures/add-server.png)
+  *Click **CONNECT** to connect to your VPS(If it does not work, you should try several time until a successful connection.)*  
+  ![connect outline client](pictures/connect.png)
+  *A successful connection:*
+  ![connected](pictures/connected.png)
+
+### *Congratulations! Now your PC is connected to the real world of Internet!*
+
+  **3. Connect from multiple platforms**  
+  *Click on **CONNECT A DIFFERENT DEVICE***
+  ![connect a different device](pictures/connect-different-device.png)
+  *Copy the link and open it in your other devices.*  
+  *You will be able to easily set it up on other devices just like in [Step 2](#connect-pc).* 
+
+  **4. Occasionally share your Outline Server with your family and friends securely**  
+  *Click on **ADD KEY**, you can either raname the key firstly or copy the generated link and share it with your friend directly.<br>And you will know every friends' data usage and can control their privilege with the help of the Outline Manager.*
 
 
+## When You are confused (Updating)
+   ***1. When you are unable to download a software***  
+
+   * *Try to shoot your troubles with [**Network Issue Solutions**](#network-issue-solutions)**
+
+   * ***Outline Client** download link for **Windows**: <br> https://raw.githubusercontent.com/Jigsaw-Code/outline-releases/master/client/Outline-Client.exe*  
+    
+   * ***Outline Client** download link for **IOS**: <br> https://itunes.apple.com/us/app/outline-app/id1356177741*  
+   
+   * ***Outline Client** download link for **macOS**: <br> https://itunes.apple.com/us/app/outline-app/id1356178125*
+   
+   * ***Outline Client** download link **with long term support**: <br> https://github.com/Jigsaw-Code/outline-client/releases*
+   
+   * ***Outline Manager** download link  for **Windows**: <br> https://raw.githubusercontent.com/Jigsaw-Code/outline-releases/master/manager/Outline-Manager.exe*  
+   
+   * ***Outline Manager** download link for **macOS**: <br> https://raw.githubusercontent.com/Jigsaw-Code/outline-releases/master/manager/Outline-Manager.dmg*
+   
+   * *If none of these above methods works, you may try one of those [free limited VPNs](#free-vpn) during your setup process.* 
+
+   ***2. When your browser is unable to load a webpage*** 
+   * *If none of these above methods workds, you may try one of those [free limited VPNs](#free-vpn) during your setup process.* 
 
 
+## Network Issue Solutions(Updating)<a id="network-issue-solutions"></a>
+   * *Refresh your browser(you may need to refresh several times) and wait(this may take several minutes).*  
+   
+   * *Use China Mobile hotspot created on your phone (when connecting your PC, since China Mobile typically has less censorship).*
 
+## Free VPN list(Updating)<a id="free-vpn"></a>
 
-
-
-
-Temporary develop note:
-
-change the selection to 30 dollar one or change server with the 20 dollar one
-
-outline client download:
-https://github.com/Jigsaw-Code/outline-client/releases
-
-The link should work for all phones
