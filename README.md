@@ -59,12 +59,13 @@
   *You should see something like below a few seconds later. The password and SSH port are important, so you may copy it or take a screenshot for later utility. (This information is also sent to you by email, but may take a while, so keep it yourself just in case)*<a id="root-password"></a>  
   ![root password](pictures/root-password.png)
 
-  **4. Install PuTTy**  
+  **4. Install PuTTy for your PC**  
+  *If you only use macOS, please [click here](https://www.ssh.com/ssh/putty/mac/) to install PuTTy on your Mac and you should be able to configure your server with similar steps as that on a Windows PC. Then [skip](#login-putty) the remaining part of step 4.*  
   *[Click here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to go to the PuTTy download page. Download the 32-bit or 64-bit version(mostly 64-bit) version of PuTTy and install it.*  
   *After a quick installation, you are now ready to use the PuTTy to connect to the server.*
   ![putty download](pictures/putty-download.png)
 
-  **5. Login to the server with PuTTy**  
+  <a id="login-putty"></a>**5. Login to the server with PuTTy**  
   *Go Back to **Main controls** and look up the IP address and SSH Port. *
   ![main controls](pictures/main-controls.png)
   *Run PuTTy.exe on your PC, then enter the IP address and Port according to the **Main controls** Panel*
@@ -182,4 +183,4 @@
 
 ## Cotributions
 #### *This is a free and open source tutorial maintained by Bill. If you like this tutorial or want more tutorials like this, and are willing to financially support me, I'd greatly appreciate it and be motivated.*
-   <img src="pictures/alipay-code.jpg" width="250px"/> <img src="pictures/wechat-code.png" width="250px"/>
+   <img src="pictures/alipay-code.jpg" width="45%"/> <img src="pictures/wechat-code.png" width="45%"/>
