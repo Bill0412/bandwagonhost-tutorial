@@ -46,7 +46,7 @@
   **2. Install the right Operating System on your server**  
   *Click on **Services** then **My Services***  
   ![services](pictures/services.png)
-  *Click on **KiwiVM Control Panel***
+  *<a id="open-control-panel"/>"Click on **KiwiVM Control Panel***
   ![control panel](pictures/control-panel-1.png)
   *Stop the server before **Reload**: Click on **Stop***  
   ![stop the server](pictures/stop-server.png)
@@ -60,7 +60,7 @@
   ![root password](pictures/root-password.png)
 
   **4. Install PuTTy for your PC**  
-  *If you only use macOS, please [click here](https://www.ssh.com/ssh/putty/mac/) to install PuTTy on your Mac and you should be able to configure your server with similar steps as that on a Windows PC. Then [skip](#login-putty) the remaining part of step 4.*  
+  <a id="mac-command-solution"/>*If you use macOS, [click here](#mac-putty-solution) to access your server and configure it.* 
   *[Click here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to go to the PuTTy download page. Download the 32-bit or 64-bit version(mostly 64-bit) version of PuTTy and install it.*  
   *After a quick installation, you are now ready to use the PuTTy to connect to the server.*
   ![putty download](pictures/putty-download.png)
@@ -71,7 +71,7 @@
   *Run PuTTy.exe on your PC, then enter the IP address and Port according to the **Main controls** Panel*
   *<br> (Note: 1. When you input your password, it is not shown explicitly, but recorded internally. So just **hit the Enter key** when you're ready to login.<br>2. **Ctrl+V** (**Shift+Insert** instead) for paste, **Ctrl+C** (**Ctrl+Insert** instead) for copy are **NOT supported** in shell.)*  
 
-  *Login with the following customized information:*  
+  *<a id="login-info-input"/>Login with the following customized information:*  
   `log in as: root`  
   `root@xxx.xxx.xxx.xxx's password: (The one you copied or in the screenshot or you can find it in your mail box.)`  
 
@@ -82,17 +82,21 @@
   ![successful login smample](pictures/successful-login.jpg)
   *(A successful login looks like this)*
 
-  **6. Configure the environment**  
+  **6. Configure the environment**<a id="configure-environment"/>  
   *It is time for us to copy and paste code! Interactive shell reacts responsively whenever we input a single line of code and hit the Enter key on our keyboard.
    So what you need to do is to enter the following code line by line and check if each one of these lines work similar to my description.*
   1. `sudo -i`   
-  *You should get a new line as a response. Just continue to enter line 2.*
-  2. `sudo apt-get install curl`   
+  *You should get a new line as a response. Just continue to enter [line 3](#code-line-3).*
+  2. <a id="code-line-2"/>`sudo apt-get install curl`   
+  *I don't recommend you to use CentOS, but in case you do, the counterpart of this line of code is:*  
+  `sudo yum install curl`  
+  *But typically, you should have embedded **curl** in your CentOS.*  
   *After hitting the Enter key and wait for a few seconds, you should see a prompt. Enter y and the installation should continue.*  
   ![install curl](pictures/curl-install.png)
-  *Go to **[Line 3](#code-line-3)** when you see this:*
+  *Go back to **[line 3](#code-line-3)** when you see this:*
   ![curl installation finished](pictures/install-curl-done.png)
   3. <a id="code-line-3"/>`curl -sS https://get.docker.com/ | sh`  
+  *If you are unable to use curl, go to [line 2](#code-line-2)*
   *It may take quite a few minutes until you see something like this:*
   ![docker installed](pictures/docker-installed.png) 
   4. `systemctl start docker`  
@@ -105,7 +109,7 @@
   *Hit Q key directly*
   ![docker running actively](pictures/docker-status-1.png) 
   
-  **7. Set up the *Outline server***  
+  **<a id="setup-outline"/>"7. Set up the *Outline server***  
   Enter the following line of code in the shell.  
   `bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"`
   <a id="outline-code"></a>![outline code](pictures/install-outline-done.png)
@@ -171,6 +175,16 @@
 
    ***2. When your browser is unable to load a webpage*** 
    * *If none of these above methods workds, you may try one of those [free limited VPNs](#free-vpn) during your setup process.* 
+   
+   ***<a id="mac-putty-solution"/>3. If you use macOS and you're unable to install and use PuTTy***
+   
+   *There's no macOS version of PuTTy. One of the easiest but less convenient way it to use the shell provided by BandwagonHost.<br>click on **Root Shell - Interactive**(in the [control panel](#open-control-panel)) on the left side bar, then click on **Launch***
+   ![open interactive shell](pictures/mac-shell-solution.png)
+   *In the interactive shell, you are now able to [login to the server](#login-info-input) and then [configure the enviroment](#configure-environment). But beware that you are unable to copy and paste but only type line by line.*
+   *You should now close the interactive shell and open **Root shell - advanced** from the left side bar, paste the code in [Part B, Step 7](#setup-outline)* and then run it.
+   *Wait a few seconds and you'll see the outcome, you can easily find a chunk of data wraped by the pair of curly brackets(included). Copy the data and save it for later use. (just like [here](#outline-code))*
+
+
 
 
 ## Network Issue Solutions(Updating)<a id="network-issue-solutions"></a>
@@ -181,6 +195,12 @@
 ## Free VPN list(Updating)<a id="free-vpn"></a>
 
 
-## Cotributions
+## Issues to be solved in this tutorial(Will be solved in later updates):
+  * *Open UDP and TCP on port 22 for CentOS server.*
+  * *macOS users are unable to download Outline client from Chinese itunes store.*
+  * *If you find issues not in the list, please contact me so that other users can enjoy better experience.*
+
+
+## Donates
 #### *This is a free and open source tutorial maintained by Bill. If you like this tutorial or want more tutorials like this, and are willing to financially support me, I'd greatly appreciate it and be motivated.*
    <img src="pictures/alipay-code.jpg" width="45%"/> <img src="pictures/wechat-code.png" width="45%"/>
