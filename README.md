@@ -1,5 +1,5 @@
 # Step by Step Tutorial
-## Part A: Purchase a server from BandwagonHost
+## Part A: Purchase a server from BandwagonHost (You may prefer higher quality server from [VirMach](https://virmach.com))
   **1. Open the [official website of BandwagonHost](https://bwh1.net/) in your web browser**  
   *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh1.net/ out.)*    
   ![The official website](pictures/bwh-index.png)   
@@ -34,10 +34,10 @@
 
 ## Part B: Set Up an Outline Server on your VPS   
   *After the payment, you should now be able to access the server you have just purchased.*  
-  *Please follow the following steps to step up your server.* 
+  *Please follow the following steps to set up your server.* 
    
- **1.Log into your account**   
- *Click on the *Client Area* button on the upper right corner of the official website.*
+ **1.Login to your account**   
+ *Click on the *Client Area* button at the upper right corner of the official website.*
   ![index client area](pictures/bwh-index-1.png)
  * *Log in with your email address and password that have been previously registered for your account in [<u>part A, step 7</u>](#register) of this tutorial.*  
  *Click on the Login button after you have filled in the forms.*
@@ -46,9 +46,9 @@
   **2. Install the right Operating System on your server**  
   *Click on **Services** then **My Services***  
   ![services](pictures/services.png)
-  *<a id="open-control-panel"/>"Click on **KiwiVM Control Panel***
+  *<a id="open-control-panel"/>Click on **KiwiVM Control Panel***
   ![control panel](pictures/control-panel-1.png)
-  *Stop the server before **Reload**: Click on **Stop***  
+  *Stop the server before reloading: Click on **Stop***  
   ![stop the server](pictures/stop-server.png)
   *Click on **Install New OS***
   ![new OS intallation](pictures/install-new-os.png)
@@ -68,7 +68,7 @@
   <a id="login-putty"></a>**5. Login to the server with PuTTy**  
   *Go Back to **Main controls** and look up the IP address and SSH Port. *
   ![main controls](pictures/main-controls.png)
-  *Run PuTTy.exe on your PC, then enter the IP address and Port according to the **Main controls** Panel*
+  *Run PuTTy.exe on your PC, then enter the IP address and SSH Port according to the **Main controls** Panel*
   *<br> (Note: 1. When you input your password, it is not shown explicitly, but recorded internally. So just **hit the Enter key** when you're ready to login.<br>2. **Ctrl+V** (**Shift+Insert** instead) for paste, **Ctrl+C** (**Ctrl+Insert** instead) for copy are **NOT supported** in shell.)*  
 
   *<a id="login-info-input"/>Login with the following customized information:*  
@@ -88,16 +88,14 @@
   1. `sudo -i`   
   *You should get a new line as a response. Just continue to enter [line 3](#code-line-3).*
   2. <a id="code-line-2"/>`sudo apt-get install curl`   
-  *I don't recommend you to use CentOS, but in case you do, the counterpart of this line of code is:*  
-  `sudo yum install curl`  
-  *But typically, you should have embedded **curl** in your CentOS.*  
+  *(If you are using CentOS, click [here](#centos-install).)*  
   *After hitting the Enter key and wait for a few seconds, you should see a prompt. Enter y and the installation should continue.*  
   ![install curl](pictures/curl-install.png)
   *Go back to **[line 3](#code-line-3)** when you see this:*
   ![curl installation finished](pictures/install-curl-done.png)
   3. <a id="code-line-3"/>`curl -sS https://get.docker.com/ | sh`  
-  *If you are unable to use curl, go to [line 2](#code-line-2)*
-  *It may take quite a few minutes until you see something like this:*
+  *(If you are unable to use curl, go to [line 2](#code-line-2).)*  
+  *If you are working fine with **curl**. It may take quite a few minutes until you see something like this:*
   ![docker installed](pictures/docker-installed.png) 
   4. `systemctl start docker`  
   *The same response as the 1st line.*
@@ -125,7 +123,7 @@
   ![download outline manager](pictures/github-outline-1.png)
   *Double click on the Outline-Manager.exe on your PC to start the quick installation of Outline Manager.<br>Wait less than a minute and you will see a the Outline Manager window, then click on **GET STARTED**.*
   ![get started outline manager](pictures/outline-manager-start.png)
-  *When you see the Outline Manager Window below, copy and paste the code you copied in [Part B, Step 7](#outline-code) and then click on done.
+  *When you see the Outline Manager Window below, copy and paste the code you copied in [Part B, Step 7](#outline-code) and then click on **DONE**.
   ![paste outline key](pictures/paste-outline-code.png)
   
   <a id="connect-pc"></a>**2. Connect current PC you are using to the server**  
@@ -133,7 +131,7 @@
   ![connect this device](pictures/connect-this-device.png)
   *Click on **COPY***
   ![copy the invitation link](pictures/copy-invitation.png)  
-  *Click on **INSTALL OUTLINE**. Download and quickly install the Outline Client and then open it.*
+  *Click on **INSTALL OUTLINE**. Download and quickly install the Outline Client and then open it. (If you want a client on any Apple device, please click [here](#apple-client).)*
   ![install outline for windows](pictures/install-outline-client.png)
   *In the Outline Client for Windows, click on **ADD SERVER**(If it does not work, please make sure you have the link starting with "ss" in your paste board.)*
   ![add server](pictures/add-server.png)
@@ -181,10 +179,16 @@
    *There's no macOS version of PuTTy. One of the easiest but less convenient way it to use the shell provided by BandwagonHost.<br>click on **Root Shell - Interactive**(in the [control panel](#open-control-panel)) on the left side bar, then click on **Launch***
    ![open interactive shell](pictures/mac-shell-solution.png)
    *In the interactive shell, you are now able to [login to the server](#login-info-input) and then [configure the enviroment](#configure-environment). But beware that you are unable to copy and paste but only type line by line.*
-   *You should now close the interactive shell and open **Root shell - advanced** from the left side bar, paste the code in [Part B, Step 7](#setup-outline)* and then run it.
+   *After executing the code in Part B, Step 6, you should now close the interactive shell and open **Root shell - advanced** from the left side bar, copy and paste the code in [Part B, Step 7](#setup-outline)* and then run it.
    *Wait a few seconds and you'll see the outcome, you can easily find a chunk of data wraped by the pair of curly brackets(included). Copy the data and save it for later use. (just like [here](#outline-code))*
 
-
+   ***4. <a id="apple-client"/>macOS and IOS users are unable to download Outline client from Chinese Itunes Store or App Store***
+   *The only way to fix it is to change the location of your Apple ID. Or alternatively, get a shared US Apple ID from the Internet or [Taobao](https://www.taobao.com)*.
+   
+   ***<a id="centos-install"/>5. apt-get is not supported in CentOS***  
+  *I don't recommend you to use CentOS, but in case you do, the counterpart of this line of code is:*  
+  `sudo yum install curl`  
+  *But typically, you should have embedded **curl** in your CentOS.*  
 
 
 ## Network Issue Solutions(Updating)<a id="network-issue-solutions"></a>
@@ -196,9 +200,8 @@
 
 
 ## Issues to be solved in this tutorial(Will be solved in later updates):
-  * *Open UDP and TCP on port 22 for CentOS server.*
-  * *macOS users are unable to download Outline client from Chinese itunes store.*
-  * *If you find issues not in the list, please contact me so that other users can enjoy better experience.*
+  * *Open UDP and TCP on port 22 for CentOS server.(CentOS support of this tutorial is not fully implemented)*
+  * *If you find issues not in the list, please feel free to contact me (Email: **jxphxufh@gamil.com**) so that other users can enjoy better experience.*
 
 
 ## Donates
