@@ -94,7 +94,7 @@
   *Go back to **[line 3](#code-line-3)** when you see this:*
   ![curl installation finished](pictures/install-curl-done.png)
   3. <a id="code-line-3"/>`curl -sS https://get.docker.com/ | sh`  
-  *(If you are unable to use curl, go to [line 2](#code-line-2).)*  
+  *(If you are unable to use curl, go to [line 2](#code-line-2).)*     
   *If you are working fine with **curl**. It may take quite a few minutes until you see something like this:*
   ![docker installed](pictures/docker-installed.png) 
   4. `systemctl start docker`  
@@ -197,6 +197,8 @@
    * *Use China Mobile hotspot created on your phone (when connecting your PC, since China Mobile typically has less censorship).*
 
 ## Free VPN list(Updating)<a id="free-vpn"></a>
+
+   * *You can use this service to temporarily connect to the real Internet for free to buy finish the setup easily: https://github.com/yinghuocho/firefly-proxy . <br> (Tip: it is in fact much more stable than Bandwagonhost, so you may want to use this as your main option for bypass the GFW (Greate Firewall) of China.)*
 
 
 ## Issues to be solved in this tutorial(Will be solved in later updates):
