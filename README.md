@@ -1,6 +1,6 @@
 # Step by Step Tutorial
 #### *Tip: If you want an easier way (but less control over the service including the protocol) to bypass the GFW (Great Firewall), just [click here](https://github.com/yinghuocho/firefly-proxy) and choose the right client for your device.*
-## Part A: Purchase a server from BandwagonHost (You may prefer higher quality server from [VirMach](https://virmach.com))
+## Part A: Purchase a server from BandwagonHost£¨If you want a premium, [click here](https://bwh1.net/aff.php?aff=032&pid=72), this kind of VPS supports 8K video play) 
   **1. Open the [official website of BandwagonHost](https://bwh1.net/) in your web browser**  
   *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh1.net/ out.)*    
   ![The official website](pictures/bwh-index.png)   
