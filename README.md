@@ -200,6 +200,7 @@
 ## Free VPN list(Updating)<a id="free-vpn"></a>
 
    * *You can use this service to temporarily connect to the real Internet for free to buy finish the setup easily: https://github.com/yinghuocho/firefly-proxy . <br> (Tip: it is in fact much more stable than Bandwagonhost, so you may want to use this as your main option for bypass the GFW (Greate Firewall) of China.)*
+   * *You can download the [u.zip](u.zip) file and try out this VPN by yourself. It's secure and fast, but with some wicked ads.*
 
 
 ## Issues to be solved in this tutorial(Will be solved in later updates):
