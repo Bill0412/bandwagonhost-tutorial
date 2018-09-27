@@ -204,7 +204,7 @@
 
 ## Issues to be solved in this tutorial(Will be solved in later updates):
   * *Open UDP and TCP on port 22 for CentOS server.(CentOS support of this tutorial is not fully implemented)*
-  * *If you find issues not in the list, please feel free to contact me (Email: **jxphxufh@gamil.com**) so that other users can enjoy better experience.*
+  * *If you find issues not in the list, please feel free to contact me (Email: **jxphxufh@gmail.com**) so that other users can enjoy better experience.*
 
 
 ## Donates
