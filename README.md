@@ -1,5 +1,5 @@
 # Step by Step Tutorial
-#### *Tip: If you want an easier way (but less control over the service including the protocol) to bypass the GFW (Great Firewall), just [click here](https://github.com/yinghuocho/firefly-proxy) and choose the right client for your device.*
+#### *Tip:  1. If you want an easier way (but less control over the service including the protocol) to bypass the GFW (Great Firewall), just [click here](https://github.com/yinghuocho/firefly-proxy) and choose the right client for your device.<br> 2. To be honest, there is a totally free and extremely fast service if do not mind the slightly embedded ad. (Click [here](#u-by-falun) to know more about [u.zip](u.zip).)<br>3. It should be noted that it will be much easier for you to setup your server and connect to it if you have already bypass the gfw using either one of the previous tips.*
 ## Part A: Purchase a server from BandwagonHost. (If you want a premium, [click here](https://bwh1.net/aff.php?aff=032&pid=72) and then go to step 5 directly, this kind of VPS supports 8K video play) ##
   **1. Open the [official website of BandwagonHost](https://bwh1.net/) in your web browser**  
   *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh1.net/ out.)*    
@@ -199,8 +199,10 @@
 
 ## Free VPN list(Updating)<a id="free-vpn"></a>
 
-   * *You can use this service to temporarily connect to the real Internet for free to buy finish the setup easily: https://github.com/yinghuocho/firefly-proxy . <br> (Tip: it is in fact much more stable than Bandwagonhost, so you may want to use this as your main option for bypass the GFW (Greate Firewall) of China.)*
-   * *You can download the [u.zip](u.zip) file and try out this VPN by yourself. It's secure and fast, but with some wicked ads.*
+   * *You can use this service to temporarily connect to the real Internet for free to buy finish the setup easily: https://github.com/yinghuocho/firefly-proxy . <br> (Tip: it is in fact much more stable than Bandwagonhost, so you may want to use this as your main option for bypass the GFW (Greate Firewall) of China.)* 
+   
+  * <a id="u-by-falun"></a>*You can download the [u.zip](u.zip) file and try out this VPN for **Windows** by yourself. It's secure, extremely fast and totally free, but with some ads since it's sponsored by Falun Dafa, which I suggest you to ignore while using it. (Alternatively, you can download the file directly from the link [here](https://git.io/vEJlj).) The **Android .apk** file is also available from [here](u108.apk)).*
+
 
 
 ## Issues to be solved in this tutorial(Will be solved in later updates):
