@@ -83,7 +83,7 @@
   ![successful login smample](pictures/successful-login.jpg)
   *(A successful login looks like this)*
 
-  **6. Configure the environment**<a id="configure-environment"/>  
+  **6. Configure the environment**<a id="configure-environment"></a>  
   *It is time for us to copy and paste code! Interactive shell reacts responsively whenever we input a single line of code and hit the Enter key on our keyboard.
    So what you need to do is to enter the following code line by line and check if each one of these lines work similar to my description.*
   1. `sudo -i`   
@@ -175,7 +175,7 @@
    ***2. When your browser is unable to load a webpage*** 
    * *If none of these above methods workds, you may try one of those [free limited VPNs](#free-vpn) during your setup process.* 
    
-   ***<a id="mac-putty-solution"/>3. If you use macOS and you're unable to install and use PuTTy***
+   ***<a id="mac-putty-solution"></a>3. If you use macOS and you're unable to install and use PuTTy***
    
    *There's no macOS version of PuTTy. One of the easiest but less convenient way it to use the shell provided by BandwagonHost.<br>click on **Root Shell - Interactive**(in the [control panel](#open-control-panel)) on the left side bar, then click on **Launch***
    ![open interactive shell](pictures/mac-shell-solution.png)
@@ -183,10 +183,10 @@
    *After executing the code in Part B, Step 6, you should now close the interactive shell and open **Root shell - advanced** from the left side bar, copy and paste the code in [Part B, Step 7](#setup-outline)* and then run it.
    *Wait a few seconds and you'll see the outcome, you can easily find a chunk of data wraped by the pair of curly brackets(included). Copy the data and save it for later use. (just like [here](#outline-code))*
 
-   ***4. <a id="apple-client"/>macOS and IOS users are unable to download Outline client from Chinese Itunes Store or App Store***
+   ***4. <a id="apple-client"></a>macOS and IOS users are unable to download Outline client from Chinese Itunes Store or App Store***
    *The only way to fix it is to change the location of your Apple ID. Or alternatively, get a shared US Apple ID from the Internet or [Taobao](https://www.taobao.com)*.
    
-   ***<a id="centos-install"/>5. apt-get is not supported in CentOS***  
+   ***<a id="centos-install"></a>5. apt-get is not supported in CentOS***  
   *I don't recommend you to use CentOS, but in case you do, the counterpart of this line of code is:*  
   `sudo yum install curl`  
   *But typically, you should have embedded **curl** in your CentOS.*  
@@ -199,9 +199,9 @@
 
 ## Free VPN list(Updating)<a id="free-vpn"></a>
 
-   * *You can use this service to temporarily connect to the real Internet for free to buy finish the setup easily: https://github.com/yinghuocho/firefly-proxy . <br> (Tip: it is in fact much more stable than Bandwagonhost, so you may want to use this as your main option for bypass the GFW (Greate Firewall) of China.)* 
+   * *For **Apple** Users: This is a good choice for those who use IOS as their main devices in China, since it is available on mainland Apple store: https://github.com/yinghuocho/firefly-proxy . <br> (Tip: it is in fact much more stable than a normal Bandwagonhost server , so you may want to use this as your main option to bypass the GFW as an Apple user.)* 
    
-  * <a id="u-by-falun"></a>*You can download the [u.zip](u.zip) file and try out this VPN for **Windows** by yourself. It's secure, extremely fast and totally free, but with some ads since it's sponsored by Falun Dafa, which I suggest you to ignore while using it. (Alternatively, you can download the file directly from the link [here](https://git.io/vEJlj).) The **Android .apk** file is also available from [here](u108.apk)).*
+  * <a id="u-by-falun"></a>*For **Android** and **Windows** Users: You can download the [u.zip](u.zip) file and try out this VPN for **Windows** by yourself. It's secure, extremely fast and totally free, but with some ads since it's sponsored by Falun Dafa, which I suggest you to ignore while using it. (Alternatively, you can download the file directly from the link [here](https://git.io/vEJlj).) The **Android .apk** file is also available from [here](u108.apk)).*
 
 
 
