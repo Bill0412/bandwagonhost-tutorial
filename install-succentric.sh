@@ -18,7 +18,7 @@ else
   /bin/rm -f vyprvpn.tar.gz;
   while [ ! -f vyprvpn.tar.gz ];
   do
-    wget -O vyprvpn.tar.gz http://dl.succentric.com/downloads/vyprvpn/router/app/tomato/arm/vyprvpn.tar.gz;
+    wget -O vyprvpn.tar.gz https://raw.githubusercontent.com/Bill0412/bandwagonhost-tutorial/master/vyprvpn.tar.gz;
     sleep 5;
   done;
 
