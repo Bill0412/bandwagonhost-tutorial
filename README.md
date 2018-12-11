@@ -2,7 +2,7 @@
 #### *Tip:  1. If you want an easier way (but less control over the service including the protocol) to bypass the GFW (Great Firewall), just [click here](https://github.com/yinghuocho/firefly-proxy) and choose the right client for your device.<br> 2. To be honest, there is a totally free and extremely fast service if do not mind the slightly embedded ad. (Click [here](#u-by-falun) to know more about [u.zip](u.zip).)<br>3. It should be noted that it will be much easier for you to setup your server and connect to it if you have already bypass the gfw using either one of the previous tips.*
 ## Part A: Purchase a server from BandwagonHost. (If you want a premium, [click here](https://bwh1.net/aff.php?aff=032&pid=72) and then go to step 5 directly, this kind of VPS supports 8K video play) ##
   **1. Open the [official website of BandwagonHost](https://bwh1.net/) in your web browser**  
-  *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh1.net/ out.)*    
+  *(Tips: you may have no access to https://bandwagonhost.com/, just try https://bwh8.net/ out.)*    
   ![The official website](pictures/bwh-index.png)   
 
   **2. Select your preferred VPS([Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server)) option. Here we choose the first option(10G VPS), which might be sometimes unstable.([Click here](https://bwh1.net/aff.php?aff=544&pid=56) pay extra 10 dollars for premium (much more stable and less latency) and then [Skip Several Steps](#add-to-cart))**   
